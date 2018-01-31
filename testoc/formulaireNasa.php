@@ -7,8 +7,8 @@
     <title>Accéder au serveur de la Nasa</title>
 </head>
 <body>
-    <h1 color="blue">REACH THE STARS </h1>
-    <h2> You're about to access the NASA NETWORK</h2></br>
+    <h1 style='color:navy'>REACH THE STARS </h1>
+    <h2 style='color:red'> You're about to access the NASA NETWORK</h2></br>
     <form method="post" action="traitementNasa">
     Name <input type="text" name="nom"></br>
     Password <input type="text" name="pw"></br>
