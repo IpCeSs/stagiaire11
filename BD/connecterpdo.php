@@ -33,7 +33,7 @@ while ($donnees=$reponse->fetch())
     <?php
     }
     
-    $reponse->closeCursor(); // Termine le traitement de la requête
+    $reponse->closeCursor(); // Termine le traitement de la requête ATTENTION TOUJOURS LE METTRE
     
     
 ?>
