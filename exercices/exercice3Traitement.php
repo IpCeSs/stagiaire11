@@ -34,10 +34,8 @@ Résultat attendu: 1 ou 2 fichiers php affichant le formulaire, si method = POST
 // Filter_input a trois parametres obligatoires la méthode pour recupérer input_post, la variable (sans $_post puisque défini au param précédent)
 //et le filtre à utiliser ici filter_validate_email
 
-if (filter_input(INPUT_POST,'email',FILTER_VALIDATE_EMAIL)){
+if (filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL)) {
     echo 'Bravo'.$_POST['prenom'].$_POST['nom'].' nous avons bien enregistré votre adresse Email';
-}else{
+} else {
     echo 'Désolé '. $_POST['prenom'].$_POST['nom'].' le format de votre email n\'est pas valide';
 }
-
-?>
