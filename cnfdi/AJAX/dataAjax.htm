@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Ajax & PHP </title>
+<script language="JavaScript">
+var XMLHttpRequestObject=false;
+if (window.XMLHttpRequest){
+XMLHttpRequestObject=new XMLHttpRequest();
+}else if (window.ActiveXObject){
+XMLHttpRequestObject=new
+ActiveXObject("Microsoft.XMLHTTP");
+}
+function recupDonnees(donneesSource, divID)
+{
+if(XMLHttpRequestObject){
+var obj = document.getElementById(divID);
+XMLHttpRequestObject.open("GET",donneesSource);
+XMLHttpRequestObject.onreadystatechange = function()
+{
+if(XMLHttpRequestObject.readyState==4&&
+XMLHttpRequestObject.status==200){
+obj.innerHTML = XMLHttpRequestObject.responseText;
+}
+}
+XMLHttpRequestObject.send(null);
+}
+}
+</script>
+</head>
+
+<body>
+<h1>Ajax & PHP </h1>
+<form>
+<input type="button" value="appellons le message!" onclick="recupDonnees('./dataAjax.php', 'cibleDiv')">
+</form>
+<div id="cibleDiv">
+<p> Le message appel&eacute; s'affichera ici </p>
+</div>
+</body>
+</html>
