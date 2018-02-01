@@ -14,10 +14,12 @@
   
 </form>
 <?php include('chatTraitement.php');
-//$miniData=$chat->query("SELECT * FROM chat");
-//liste de messages à afficher
- echo $message;
 
+//liste de messages à afficher
 ?>
+<p><?php echo affichePseudo($pseudoData).' : '.afficheMessage($msgData).'</br>'; ?></p>
+
+
+
 </body>
 </html>
