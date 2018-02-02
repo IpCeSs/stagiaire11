@@ -18,18 +18,20 @@
 }catch (Exception $e){
 die('erreur:'.$e->getMessage());
 }
-$blogData=$blog->query('SELECT * FROM billets');
+$blogData=$blog->query('SELECT id,contenu,titre,DATE_FORMAT(date_creation, \'%d/%m/%Y à %Hh%imin%ss\') AS date_creation_fr FROM billets ORDER BY id DESC LIMIT 0,5');
 while($billets=$blogData->fetch()){?>
- <h3 class="news"><?php echo $billets['titre'].' Le '.$billets['date_creation']?></h3>
+ <h3 class="news"><?php echo htmlspecialchars($billets['titre']).' Le '.htmlspecialchars($billets['date_creation_fr']);?></h3>
     <div class="news">
         <p><?php echo $billets['contenu']?></p>
     </div>
-   <div class="comment"> <a href="commentaires.php">Commentaire</a> </div></br>
+    <!--chaque billet est suivi d'un lien vers la pagecommentaires.php qui transmet le numéro du billet dans l'URL 
+    donc on récupérera de l'autre côté avec $_GET-->
+   <div class="comment"> <a href="commentaires.php?billet=<?php $billets['id']; ?>">Commentaire</a> </div></br>
 <?php
 }
 
 
-
+$blogData->closeCursor();
 
 
 ?>
