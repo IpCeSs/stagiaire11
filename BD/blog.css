@@ -1,0 +1,32 @@
+h1, h3
+{
+    text-align:center;
+}
+h3
+{
+    background-color:rgb(128, 116, 116);
+    color:white;
+    font: size 12em;
+    margin-bottom:0px;
+}
+.news p
+{
+    background-color:#CCCCCC;
+    margin-top:0px;
+}
+.news
+{
+    width:70%;
+    margin:auto;
+}
+
+a
+{
+    text-decoration: none;
+    color: rgb(255, 217, 0);
+    text-align:center;
+}
+.comment{
+    text-align: center;
+    margin-top:0px;
+}
