@@ -16,9 +16,12 @@ try {
     $blog=new PDO('mysql:host=stagiaireonze;dbname=tdblog;charset=utf8', 'root', '');
 }catch (Exception $e){
 die('erreur:'.$e->getMessage());
-}//récupérerles ids de billets pour afficher les commentaires correspondants
+}//récupérer les ids de billets pour afficher les commentaires correspondants
 ?>
-<h1 style='color:#F01951' align='center'>Commentaire!</h1>
-
+<h1 style='color:#F01951' align='center'>Commentaires</h1>
 <a href='blog.php'>Retour à la liste de billets</a>
+<div class="news">
+        <p><?php echo $billets['contenu']?></p>
+    </div>
+
 

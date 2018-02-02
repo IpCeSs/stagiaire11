@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  ven. 02 fév. 2018 à 14:45
+-- Généré le :  ven. 02 fév. 2018 à 15:42
 -- Version du serveur :  5.7.19
 -- Version de PHP :  7.1.9
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `billets` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `titre` varchar(255) NOT NULL,
   `contenu` text NOT NULL,
-  `date_creation` datetime NOT NULL,
+  `date_creation` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
