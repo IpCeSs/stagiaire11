@@ -32,3 +32,7 @@ while($garcons=$BddGarcons->fetch()){
 $BddGarcons->closeCursor(); // Termine le traitement de la requête ATTENTION NE PAS OUBLIER
 
 ?>
+
+
+
+

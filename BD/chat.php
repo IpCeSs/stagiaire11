@@ -7,18 +7,26 @@
     <title>Minichat</title>
 </head>
 <body>
-    <form method='post' action='chatTraitement.php' align='center'>
+    <form method='post' action='chatTraitementBis.php' align='center'>
     Pseudo <input type='text' name='pseudo'></br></br>
-    <textarea rows="4" cols="50" name="message">Commencer à chatter</textarea></br>
+    <textarea rows="4" cols="50" name="message" ></textarea></br>
     <input  type="submit" name='envoi'>
   
 </form>
-<?php include('chatTraitement.php');
+<?php
+try {
+    $chat=new PDO('mysql:host=stagiaireonze; dbname=minichat;charset=utf8', 'root', '');
+} catch (Exception $e) {
+    die('erreur:' .$e->getMessage());
+}
 
-//liste de messages à afficher
+//WHERE= où la chaine n'est pas vide texte AND pseudo . si l'un des deux est vide la bd n'est pas appelée et rien ne s'affiche
+$recuperation=$chat->query("SELECT pseudo,texte FROM chat WHERE pseudo!='' AND texte!='' ORDER BY id DESC LIMIT 0,10");
+while($donnees=$recuperation->fetch()){?>
+   <p style='color:#F54C27' align='center'><?php echo $donnees['pseudo'].' : '?><span style='color:#159403'><?php echo $donnees['texte'].'</br>';?></span></p>
+   <?php
+}
 ?>
-<p><?php echo affichePseudo($pseudoData).' : '.afficheMessage($msgData).'</br>'; ?></p>
-
 
 
 </body>
