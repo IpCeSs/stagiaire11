@@ -16,6 +16,8 @@ class CreateCardsTable extends Migration
         Schema::create('exoCards', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
+            $table->integer('annee_de_naissance');
+            $table->string('films');
             $table->timestamps();
         });
     }

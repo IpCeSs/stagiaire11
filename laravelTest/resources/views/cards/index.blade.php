@@ -2,4 +2,9 @@
 
 @section('content')
 <h1>All cards</h1>
+@foreach ($exoCards as $card)
+<div>
+{{$card->title}}
+</div>
+@endforeach
     @stop

@@ -23,3 +23,7 @@ Route::get('first', 'persoController@first');
 
 Route::get('cards', 'cardsController@index');
 
+//selon la page on va afficher une carte grace à son id 
+//pge/1 => id1. grace à {card}
+Route::get('cards/{card}','CardsController@show');
+
