@@ -45,3 +45,4 @@ if (isset($_FILES['monFichier']) && $_FILES['monFichier']['error']==0)
         echo 'Oops le fichier que vous tentez d\'envoyer est trop gros!';
     }
 }
+
