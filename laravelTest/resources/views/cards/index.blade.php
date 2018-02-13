@@ -3,8 +3,8 @@
 @section('content')
 <h1>All cards</h1>
 @foreach ($exoCards as $card)
-<div>
-{{$card->title}}
+<div class='links'>
+<a  href="/laravelTest/public/cards/{{$card->id}}">{{$card->title}}</a>
 </div>
 @endforeach
     @stop
