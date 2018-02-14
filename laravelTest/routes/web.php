@@ -16,16 +16,16 @@
 // });
 
 
-//on appelle le controlleur que l'on a crée
-Route::get('/', 'persoController@home');
+// //on appelle le controlleur que l'on a crée
+// Route::get('/', 'persoController@home');
 
-Route::get('first', 'persoController@first');
+// Route::get('first', 'persoController@first');
 
-Route::get('cards', 'cardsController@index');
+// Route::get('cards', 'cardsController@index');
 
-//selon la page on va afficher une carte grace à son id 
-//pge/1 => id1. grace à {card}
-Route::get('cards/{card}','CardsController@show');
-//pour recupérer les infos saisies dasn formulaire
-Route::post('cards/{card}/actor','ActorCardsController@store');
+// //selon la page on va afficher une carte grace à son id 
+// //pge/1 => id1. grace à {card}
+// Route::get('cards/{card}','CardsController@show');
+// //pour recupérer les infos saisies dasn formulaire
+// Route::post('cards/{card}/actor','ActorCardsController@store');
 
