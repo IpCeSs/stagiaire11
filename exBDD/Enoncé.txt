@@ -1,0 +1,60 @@
+﻿Requête 1 : Retrouver la liste de tous les films.
+
+Requête 2 : Retrouver la liste des films dont la longueur dépasse 180 min.
+
+Requête 3 : Donner la liste de tous les genres de film.
+
+Requête 4 : Trouver le titre et l’année des films de science fiction dont le budget dépasse 5.000.000 $.
+
+Requête 5 : Donner le nombre de films par genre.
+
+Requête 6 : Donner le nombre de films de 1960 par genre.
+
+Requête 7 : Trouver le titre des films réalisés par Roman Polanski.
+
+Requête 8 : Quels sont les acteurs (nom, prénom) qui ont joué dans un film de Spielberg.
+
+Requête 9 : Trouver le titre et l’année du film le plus long.
+
+Requête 10 : Nom et prénom des acteurs qui ont joué Gavroche dans les différentes versions des « Misérables » avec les dates correspondantes.
+
+Requête 11 : Quel est le total des salaires des acteurs du film « Nuits blanches à Seattle ».
+
+Requête 12 : Donner la moyenne des salaires des acteurs par film, avec le titre et  l’année correspondants.
+
+Requête 13 : Trouver le genre des films des années 80 dont le budget moyen dépasse 200.000 $.
+SELECT f.genre, AVG(f.budget) as budget_moyen
+												FROM film f
+												WHERE f.ann < 1990 AND f.ann >= 1980
+												GROUP BY f.genre
+												HAVING AVG(f.budget) > 200000
+
+Requête 14 : Pour chaque film de Spielberg (titre, année), donner le total des salaires des acteurs.
+
+Requête 15 : Lister les cinémas dont la taille moyenne d'écran est supérieure à 40 mètres carrés.
+
+Requête 16 : Quels sont les cinémas Annecien de Pathé, qui passent un film de Steven Spielberg avant 22 heures dans une salle d'au moins 200 places et d'écran de taille supérieure à 30 m carrés.
+
+Requête 17 : Trouver le titre des films qui ne passent à aucun cinéma de la compagnie Pathé.
+SELECT DISTINCT titre FROM film
+INNER JOIN passe ON passe.numf=film.numf
+INNER JOIN cinema ON cinema.numc=passe.numc
+WHERE film.numf NOT In(SELECT passe.numf FROM passe               
+INNER JOIN cinema ON cinema.numc=passe.numc
+                WHERE cinema.compagnie='FOX')
+
+Requête 18 : Trouver le nom et le prénom des acteurs qui ont eu un salaire plus important que celui du réalisateur.
+
+Requête 19 : Trouver le nom, le prénom, le numéro des acteurs qui ont joué dans tous les films de James Cameron, s'il y en a.
+
+
+
+Requête 20 : Pour chaque film de Spielberg, trouver le nom et le prénom de l'acteur qui a eu le plus gros salaire.
+
+Requête 21 : Donner le nom et le prénom des réalisateurs qui ont eu le plus gros salaire sur un de leurs films
+
+Requête 22 : Supprimer la séance de 22h00 du cinéma Décavision pour la salle 3
+
+Requête 23 : Supprimer Johnny Depp de la base de données
+
+Requête 24 : Insérer dans la base le film de votre choix et ajouter une séance pour ce dernier dans le cinéma de votre choix 

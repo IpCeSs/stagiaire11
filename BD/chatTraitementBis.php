@@ -20,4 +20,5 @@ $chatData=$chat->prepare('INSERT INTO chat(pseudo, texte) VALUES (:pseudo, :text
 
 //permet de renvoyer directement sur chat.php le visiteur ne verra jamais 
 header('location:chat.php');
+
 ?>
