@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e0d7126-616e-41d6-b89b-b454134b9886" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/superheroesTD/SuperHeros.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/superheroesTD/index_heros.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,7 +49,7 @@
       <path value="C:\wamp64\bin\php\php7.1.9\php.exe" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -124,15 +122,23 @@
       <updated>1518163271464</updated>
       <workItem from="1518163273304" duration="481000" />
       <workItem from="1518428711404" duration="32000" />
-      <workItem from="1518715432239" duration="160000" />
+      <workItem from="1518715432239" duration="208000" />
     </task>
+    <task id="LOCAL-00001" summary="creation superheroes">
+      <created>1518715639110</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1518715639110</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="673000" />
+    <option name="totallyTimeSpent" value="721000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10614934" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -160,6 +166,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="creation superheroes" />
+    <option name="LAST_COMMIT_MESSAGE" value="creation superheroes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
