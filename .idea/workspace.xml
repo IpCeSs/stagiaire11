@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e0d7126-616e-41d6-b89b-b454134b9886" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/superheroesTD/heros.css" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/superheroesTD/index_heros.php" afterPath="$PROJECT_DIR$/superheroesTD/index_heros.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -163,7 +161,7 @@
       <workItem from="1518163273304" duration="481000" />
       <workItem from="1518428711404" duration="32000" />
       <workItem from="1518715432239" duration="6583000" />
-      <workItem from="1518722346296" duration="731000" />
+      <workItem from="1518722346296" duration="778000" />
     </task>
     <task id="LOCAL-00001" summary="creation superheroes">
       <created>1518715639110</created>
@@ -172,11 +170,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518715639110</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="bootstrap +bdd superheroes">
+      <created>1518723113387</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1518723113387</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7827000" />
+    <option name="totallyTimeSpent" value="7874000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -209,7 +214,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="creation superheroes" />
-    <option name="LAST_COMMIT_MESSAGE" value="creation superheroes" />
+    <MESSAGE value="bootstrap +bdd superheroes" />
+    <option name="LAST_COMMIT_MESSAGE" value="bootstrap +bdd superheroes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
