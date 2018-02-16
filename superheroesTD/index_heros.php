@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-    <link rel=stylesheet" href="heros.css">
+
     <title>SuperHeros</title>
 </head>
-<body>
+<body style="font-family:'Permanent Marker'">
 <h1 id="titre" align="center" style="color:black">SuperHeroes League</h1><br>
 <table class="table ">
     <thead class="thead-inverse ">
@@ -65,20 +65,19 @@
         <fieldset class="form-group row">
             <div class="offset-2 col-2">UNIVERSE</div>
             <div class="form-check form-check-inline">
-
-                <label class="form-check-label offset-2">
+                <label class="form-check-label offset-6">
                     <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                     MARVEL
                 </label>
             </div>
             <div class="form-check form-check-inline">
-                <label class="form-check-label">
+                <label class="form-check-label offset-6">
                     <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
                     DC Comics
                  </label>
             </div>
             <div class="form-check form-check-inline">
-                <label class="form-check-label">
+                <label class="form-check-label offset-6">
                     <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
                     AUTRE
                 </label>
