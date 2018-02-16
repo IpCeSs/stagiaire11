@@ -1,5 +1,6 @@
 <?php
-abstract class Humain{
+namespace Cours;
+/*abstract*/ class Humain{
     // ON MET protected pour que les filles heritent des propriétés et aussi
     //pour des questions de securité
 protected $nom;
