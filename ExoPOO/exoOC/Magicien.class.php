@@ -7,6 +7,8 @@ class Magicien extends Personnage
     const SORT = 'sort';
     const POTION = 'potion';
     const BATON_MAGIQUE = 'bâton magique';
+    public static $magiciensEnJeu;
+
 
     public function __construct($nomAttribue)
     {
@@ -17,18 +19,27 @@ class Magicien extends Personnage
         $this->force = 200;
         $this->pdv = 4000;
         $this->arme = [self::SORT, self::POTION, self::BATON_MAGIQUE];
+        self::$magiciensEnJeu++;
+    }
+    public static function magiciensEnJeu(){
+        return self::$magiciensEnjeu;
     }
 
     public static function attackType($arme)
     {
         $weapon = $arme[array_rand($arme, 1)];
+        if(!empty($weapon))
         if ($weapon == self::SORT) {
             return "Suite au sort lancé par ";
         } elseif ($weapon == self::POTION) {
-            return "Enorme dégâts causés par la potion magique lancée par ";
+            return "Enormes dégâts causés par la potion magique lancée par ";
         } elseif ($weapon == self::BATON_MAGIQUE) {
             return "Gros coup de bâton magique lancé par ";
         }
+        else{
+            return 'L\'attaque a échoué';
+        }
+
     }
 
 
@@ -44,7 +55,7 @@ class Magicien extends Personnage
     public function losePdv(Personnage $attacker)
     {
         $this->pdv -= $attacker->degats;
-        echo static::attackType($attacker->arme) . $attacker->nom . ', ' . $this->nom . ' n\'a plus que ' . $this->pdv . ' points de Vie <br><br>';
+        echo $attacker::attackType($attacker->arme) . $attacker->nom . ', ' . $this->nom . ' n\'a plus que ' . $this->pdv . ' points de Vie <br><br>';
     }
 
 

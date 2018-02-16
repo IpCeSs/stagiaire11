@@ -4,20 +4,23 @@
 include('Personnage.class.php');
 include('Magicien.class.php');
 include('Guerrier.class.php');
+$classeMagiciens = 'Magicien';
+$classePersonnages = 'Personnage';
+$classeGuerriers = 'Guerrier';
 //on crée une instance/un objet de la class Personnage
-$perso1=new \exoOC\Guerrier('Arnaud');
-
-
+$perso1 = new \exoOC\Guerrier('Arnaud');
 //on instancie à nouveau la class Personnage, on a donc 2 objets
-$perso2=new \exoOC\Magicien('Cécilia');
+$perso2 = new \exoOC\Magicien('Cécilia');
 
 //ici $this fait référence à $perso1/ $persoAFrapper fait référence à $perso2
-
 $perso1->frapper($perso2);
 $perso2->losePdv($perso1);
 
-
-
 $perso2->frapper($perso1);
 $perso1->losePdv($perso2);
+
+echo 'Il y a ' . \exoOC\Personnage::personnagesEnJeu() . ' Personnages en jeu.';
+echo 'Il y a ' . \exoOC\Magicien::magiciensEnJeu() . 'Magiciens en jeu.';
+echo 'Il y a ' . \exoOC\Guerrier::GuerriersEnjeu() . 'Guerriers en jeu.';
+?>
 

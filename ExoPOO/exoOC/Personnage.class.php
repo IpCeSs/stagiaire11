@@ -11,6 +11,8 @@ abstract class Personnage
     protected $pdv;
     protected $typeAttck;
     protected $arme;
+    public static $personnagesEnJeu;
+
 
     /* //methode pour déplacer le personnage sa localisation
      public function deplacer(){
@@ -19,6 +21,10 @@ abstract class Personnage
     public function __construct($nomAttribue)
     {
         $this->nom = $nomAttribue;
+        self::$personnagesEnJeu++;
+    }
+    public static function personnagesEnJeu(){
+        return self::$personnagesEnjeu;
     }
     //methode qui frappera le personnage
     //on passe en argument de fonction le personnage à frapper $persoAFrapper
