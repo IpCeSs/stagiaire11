@@ -4,21 +4,39 @@ namespace exoOC;
 
 class Magicien extends Personnage
 {
+    const SORT = 'sort';
+    const POTION = 'potion';
+    const BATON_MAGIQUE = 'bâton magique';
+
     public function __construct($nomAttribue)
     {
         parent::__construct($nomAttribue);
 
-        $this->degats= 400;
-        $this->experience=15;
-        $this->force=200;
-        $this->pdv=4000;
+        $this->degats = 400;
+        $this->experience = 15;
+        $this->force = 200;
+        $this->pdv = 4000;
+        $this->arme = [SORT, POTION, BATON_MAGIQUE];;
     }
+
+    public static function attackType($arme)
+    {
+        $weapon = $arme[array_rand($arme, 1)];
+        if ($weapon == SORT) {
+            return "Suite au sort lancé par ";
+        } elseif ($weapon == POTION) {
+            return "Enorme dégâts causés par la potion magique lancée par ";
+        } elseif ($weapon == BATON_MAGIQUE) {
+            return "Gros coup de bâton magique lancé par ";
+        }
+    }
+
 
     public function frapper(Personnage $persoAFrapper)
     {
         $persoAFrapper->degats += $this->force;
         $this->experience = $this->experience + 20;
-        echo $this->nom . ' lance un sort puissant contre ' . $persoAFrapper->nom . ', qui tombe à genoux !<br>';
+        echo $this->nom . ' lance une attaque puissante contre ' . $persoAFrapper->nom . ', qui tombe à genoux !<br>';
         echo $this->nom . ' gagne ' . $this->experience . ' points d\'expérience<br>';
         return $this->experience + 20;
     }
@@ -26,9 +44,7 @@ class Magicien extends Personnage
     public function losePdv(Personnage $attacker)
     {
         $this->pdv -= $attacker->degats;
-
-
-        echo "Suite au sort lancé par " . $attacker->nom . ', ' . $this->nom . ' n\'a plus que ' . $this->pdv . ' points de Vie <br><br>';
+        echo static::attackType($attacker->arme) . $attacker->nom . ', ' . $this->nom . ' n\'a plus que ' . $this->pdv . ' points de Vie <br><br>';
     }
 
 
