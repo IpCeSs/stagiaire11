@@ -16,17 +16,17 @@ class Magicien extends Personnage
         $this->experience = 15;
         $this->force = 200;
         $this->pdv = 4000;
-        $this->arme = [SORT, POTION, BATON_MAGIQUE];;
+        $this->arme = [self::SORT, self::POTION, self::BATON_MAGIQUE];
     }
 
     public static function attackType($arme)
     {
         $weapon = $arme[array_rand($arme, 1)];
-        if ($weapon == SORT) {
+        if ($weapon == self::SORT) {
             return "Suite au sort lancé par ";
-        } elseif ($weapon == POTION) {
+        } elseif ($weapon == self::POTION) {
             return "Enorme dégâts causés par la potion magique lancée par ";
-        } elseif ($weapon == BATON_MAGIQUE) {
+        } elseif ($weapon == self::BATON_MAGIQUE) {
             return "Gros coup de bâton magique lancé par ";
         }
     }
