@@ -23,8 +23,15 @@ abstract class Personnage
         $this->nom = $nomAttribue;
         self::$personnagesEnJeu++;
     }
+
+    //à revoir car même function présente dans tous les fichier
+    //il faudrait une fonction avec param pour pouvoir l'utiliser partout
+    //de ce genre?? à travailler
+    /*public static function toonCount($toons){
+return self::$toons;
+}*/
     public static function personnagesEnJeu(){
-        return self::$personnagesEnjeu;
+        return self::$personnagesEnJeu;
     }
     //methode qui frappera le personnage
     //on passe en argument de fonction le personnage à frapper $persoAFrapper

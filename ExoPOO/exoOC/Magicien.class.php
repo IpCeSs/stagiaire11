@@ -22,7 +22,7 @@ class Magicien extends Personnage
         self::$magiciensEnJeu++;
     }
     public static function magiciensEnJeu(){
-        return self::$magiciensEnjeu;
+        return self::$magiciensEnJeu;
     }
 
     public static function attackType($arme)
@@ -34,7 +34,7 @@ class Magicien extends Personnage
         } elseif ($weapon == self::POTION) {
             return "Enormes dégâts causés par la potion magique lancée par ";
         } elseif ($weapon == self::BATON_MAGIQUE) {
-            return "Gros coup de bâton magique lancé par ";
+            return "Gros coup de bâton magique porté par ";
         }
         else{
             return 'L\'attaque a échoué';

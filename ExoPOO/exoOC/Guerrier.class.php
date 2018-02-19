@@ -23,7 +23,7 @@ class Guerrier extends Personnage
 
     public static function guerriersEnJeu()
     {
-        return self::$guerriersEnjeu;
+        return self::$guerriersEnJeu;
     }
 
     public static function attackType($arme)
@@ -59,7 +59,7 @@ class Guerrier extends Personnage
     {
         $this->pdv -= $attacker->degats;
 
-        echo $attacker::attackType($attacker->arme) . $attacker->nom . ', ' . $this->nom . ' n\'a plus que ' . $this->pdv . ' points de Vie <br>';
+        echo $attacker::attackType($attacker->arme) . $attacker->nom . ', ' . $this->nom . ' n\'a plus que ' . $this->pdv . ' points de Vie <br><br>';
     }
 
     //on inclue gagner expérience dans frapper car c'est l'action de frapper
