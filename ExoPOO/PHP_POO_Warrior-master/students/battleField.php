@@ -6,6 +6,8 @@
 
   class BattleField extends BaseBattleField
   {
+      public static function createMyWarrior(){
+      }
 
 
   }
