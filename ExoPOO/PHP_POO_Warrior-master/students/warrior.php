@@ -3,10 +3,11 @@
 require_once __DIR__ . "/../base/localWarrior.php";
 
 
-$GLOBALS['warriorID'] = 'cess';
+$GLOBALS['warriorID'] = 'Pikachu';
+
 
 // Définissez vos class de combattants
- abstract class Warrior extends LocalWarrior {
+ abstract class Warrior extends localgiWarrior {
     public $id;
     public $name;
     public $speed;
@@ -23,7 +24,7 @@ $GLOBALS['warriorID'] = 'cess';
 
     }
 
-    public function SetWeapon($weapon){
+    public function SetWeapon(Weapon $weapon){
         $this->weapon=$weapon;
     }
 
@@ -75,6 +76,8 @@ class PokemonWarrior extends Warrior{
 
 
 }
+///////
+
 
 ////
 class Weapon{
