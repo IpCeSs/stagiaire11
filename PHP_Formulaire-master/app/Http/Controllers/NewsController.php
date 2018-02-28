@@ -9,14 +9,6 @@ class NewsController extends Controller
 {
 
 
-    public function postForm(Request $request)
-    {
-        $article=new Article;
-        $article->title=$request->input('title');
-        $article->content=$request->input('content');
-        $article->save();
-            return view('news.articles');
-    }
 
 
     public function index()
@@ -38,20 +30,29 @@ class NewsController extends Controller
      */
     public function store(Request $request)
     {
+        $article=new Article();
+        $article->title=$request->input('title');
+        $article->content=$request->input('content');
+        $article->save();
+
+
+        if ($article->save()){
         $data = [
             'article' => [
                 'title' => $request->input('title'),
                 'content' => $request->input('content'),
+
             ]
+
         ];
 
         return view('news.articles', $data);
 
-    }
+    }}
 
-    public function show($id)
+    public function show( )
     {
-        //
+
     }
 
     /**

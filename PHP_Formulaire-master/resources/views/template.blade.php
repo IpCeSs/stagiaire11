@@ -25,6 +25,8 @@
                 <ul class="nav navbar-nav">
                     <li><a href="/user/create">Utilisateur</a></li>
                     <li><a href="/news/create">News</a></li>
+                    <li><a href="/user/all">Voir tous les utilisateurs</a></li>
+                    <li><a href="/news/all">voir toutes les News</a></li>
                 </ul>
             </div>
             </div>

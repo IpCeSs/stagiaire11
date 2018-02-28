@@ -17,6 +17,10 @@ Route::get('/', function () {
 
 Route::get('/user/create', 'UserController@create');
 Route::post('/user', 'UserController@store');
+route::get('/user/all','UserController@show');
 
 Route::get('/news/create', 'NewsController@create');
-Route::post('/news/articles', 'NewsController@postForm');
+Route::post('/news/articles', 'NewsController@store');
+
+
+
