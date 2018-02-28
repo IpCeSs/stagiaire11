@@ -85,5 +85,16 @@
         </fieldset>
         <button type="submit" class="btn btn-danger btn-block offset-4 col-4 ">Submit</button>
     </form>
+
+
+<?php
+try{
+    $supH=new PDO('mysql:host=stagiaireonze;dbname=superheros;charset=utf8','root','');
+}catch(Exception $e){
+    die('erreur:'.$e->getMessage());
+
+
+}
+?>
 </body>
 </html>

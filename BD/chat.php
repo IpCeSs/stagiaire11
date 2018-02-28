@@ -20,10 +20,11 @@ try {
     die('erreur:' .$e->getMessage());
 }
 
-//WHERE= où la chaine n'est pas vide texte AND pseudo . si l'un des deux est vide la bd n'est pas appelée et rien ne s'affiche
+/*WHERE= où la chaine n'est pas vide texte AND pseudo . si l'un des deux est vide la bd n'est pas appelée et rien ne s'affiche*/
 $recuperation=$chat->query("SELECT pseudo,texte,DATE_FORMAT(date, '%d/%m/%Y %Hh%imin%ss') AS date FROM chat WHERE pseudo!='' AND texte!='' ORDER BY id DESC LIMIT 0,10");
-while($donnees=$recuperation->fetch()){?>
-   <p style='color:#F54C27' align='center'><?php echo $donnees['date'].' '.$donnees['pseudo'].' : '?><span style='color:#159403'><?php echo $donnees['texte'].'</br>';?></span></p>
+while($donnees=$recuperation->fetch())
+{?>
+   <p style='color:#F54C27' align='center'><?php echo $donnees['date'].' '.$donnees['pseudo'].' : ';?><span style='color:#159403'><?php echo $donnees['texte'].'</br>';?></span></p>
    <?php
 }
 ?>
