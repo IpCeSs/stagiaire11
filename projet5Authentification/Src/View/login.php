@@ -11,11 +11,13 @@
         <form method="post" action="?page=login&action=connect">
             <div class="form-group offset-4 col-4">
                 <label for="login">Login</label>
-                <input type="text" class="form-control" name="login" id="login"  placeholder="Entrez votre login">
+                <input type="text" value="<?php
+                echo (isset($_COOKIE['login'])) ? $_COOKIE['login'] : null ?>" class="form-control" name="login" id="login"  >
             </div>
             <div class="form-group offset-4 col-4">
                 <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password" >
+                <input type="password" value="<?php
+                echo (isset($_COOKIE['password'])) ? $_COOKIE['password'] : null ?>" class="form-control" name="password" id="exampleInputPassword1" >
             </div>
             <div class="form-check"' style="text-align: center">
                 <input type="checkbox" value="1" class="form-check-input" id="remember" checked >

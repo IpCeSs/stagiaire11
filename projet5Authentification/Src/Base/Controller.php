@@ -34,7 +34,10 @@
             switch ($this->_page) {
                 case 'logout':
                     require_once 'Src/Controller/LogoutController.php';
-                    new LogoutController();
+
+                    $logout=new LogoutController();
+
+                    $logout->destroy();
 
                     require_once 'Src/View/logout.php';
 
@@ -42,11 +45,10 @@
                 default:
                     require_once 'Src/Controller/LoginController.php';
                     $login = new LoginController();
-
-
-                    require_once 'Src/View/login.php';
                     $login->start();
-                    $login->cookie();
+                    require_once 'Src/View/login.php';
+
+
                     break;
             }
         }

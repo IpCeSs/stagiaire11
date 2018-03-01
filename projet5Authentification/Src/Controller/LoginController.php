@@ -12,46 +12,55 @@ class LoginController extends Controller
 {
 
 
-
-
-    public function start(){
+    public function start()
+    {
         session_start();
-            $_SESSION['login']='cess';
-            $_SESSION['password']="c";
-    {
-        if (
-            isset($_POST['password']) &&
-            isset($_POST['login'])
-        ) {
+        $_SESSION['login'] = 'cess';
+        $_SESSION['password'] = "c";
+        {
             if (
-                $_SESSION['login'] === $_POST['password'] &&
-                $_SESSION['password']  === $_POST['login']
+                isset($_POST['password']) &&
+                isset($_POST['login'])
             ) {
-                header('location:?page=logout');
-            } else {
-                die('Pas les bons identifiants');
+                if (
+                    $_SESSION['login'] === $_POST['login'] &&
+                    $_SESSION['password'] === $_POST['password']
+                ) {
+                    $this->cookielogin();
+                    $this->cookiepass();
+
+                    header('location:?page=logout');
+                } else {
+                    die('Pas les bons identifiants');
+                }
+
+
             }
+        }
+    }
 
-
-        }}}
-        public function cookie()
+    public function cookielogin()
     {
-        if (isset ($_POST['remember'])) {
-            if ($_POST["remember"] == "1" || $_SESSION["remember"] == 'on') {
+        if (isset ($_POST['login'])) {
+            {
                 $hour = time() + 3600 * 24 * 30;
                 setcookie('login', $_POST['login'], $hour);
-                setcookie('password', $_POST['password'], $hour);
-
 
             }
         }
 
     }
 
+    public function cookiepass()
+    {
+        if (isset ($_POST['password'])) {
+            {
+                $hour = time() + 3600 * 24 * 30;
+
+                setcookie('password', $_POST['password'], $hour);
+            }
 
 
-
-
-
-
+        }
+    }
 }
