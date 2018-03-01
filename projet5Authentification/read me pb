@@ -1,0 +1,5 @@
+// probleme avec session à retravailler
+//les $_session ne fonctionnent plus
+
+essayer de voir si les construct des la correction sont necessaires.
+supprimmer l'un des controlleurs et n'en utiliser plus qu'un??

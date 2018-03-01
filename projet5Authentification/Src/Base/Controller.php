@@ -35,9 +35,9 @@
                 case 'logout':
                     require_once 'Src/Controller/LogoutController.php';
 
-                    $logout=new LogoutController();
+                  new LogoutController();
 
-                    $logout->destroy();
+                    //$logout->destroy();
 
                     require_once 'Src/View/logout.php';
 
