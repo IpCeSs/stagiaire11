@@ -10,10 +10,7 @@
      */
     abstract class Controller
     {
-        public static function sessionStart(){
 
-                          session_start();
-        }
 
 
     }

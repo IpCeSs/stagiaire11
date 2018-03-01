@@ -35,14 +35,18 @@
                 case 'logout':
                     require_once 'Src/Controller/LogoutController.php';
                     new LogoutController();
+
                     require_once 'Src/View/logout.php';
+
                     break;
                 default:
                     require_once 'Src/Controller/LoginController.php';
                     $login = new LoginController();
-                    $login->verif();
+
+
                     require_once 'Src/View/login.php';
-                    session_start();
+                    $login->start();
+                    $login->cookie();
                     break;
             }
         }

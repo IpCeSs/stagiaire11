@@ -11,14 +11,14 @@
         <form method="post" action="?page=login&action=connect">
             <div class="form-group offset-4 col-4">
                 <label for="login">Login</label>
-                <input type="text" class="form-control" name="login" id="login" placeholder="Entrez votre login">
+                <input type="text" class="form-control" name="login" id="login"  placeholder="Entrez votre login">
             </div>
             <div class="form-group offset-4 col-4">
                 <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
+                <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password" >
             </div>
             <div class="form-check"' style="text-align: center">
-                <input type="checkbox" class="form-check-input" id="remember">
+                <input type="checkbox" value="1" class="form-check-input" id="remember" checked >
                 <label class="form-check-label" for="remember">Se souvenir de moi</label>
             </div>
             <div class="form-controll " style="text-align: center">

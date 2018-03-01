@@ -10,11 +10,13 @@
      */
     class LogoutController extends Controller
     {
-        public function out()
+        public $logout;
+        public function destroy()
         {
-            parent::sessionDie();
+            session_destroy();
 
-            echo "la session s'est terminée correctement";
+            header('location:?page=login');
+
 
 
 
