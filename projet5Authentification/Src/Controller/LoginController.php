@@ -12,64 +12,57 @@ class LoginController extends Controller
 {
 
 
-    public function start()
+    public function __construct()
     {
-        session_start();
-        $_SESSION['login'] = 'cess';
-        $_SESSION['password'] = "c";
-        {
-            if (
-                isset($_POST['password']) &&
-                isset($_POST['login'])
-            ) {
-                if (
-                    $_SESSION['login'] === $_POST['login'] &&
-                    $_SESSION['password'] === $_POST['password']
-                ) {
-                    $this->cookielogin();
-                    $this->cookiepass();
+        parent::__construct();
+        if (
+            isset($_POST['password']) &&
+            isset($_POST['login']) &&
+            'cess' === $_POST['login'] &&
+            "c" === $_POST['password']
+        ) {
 
-                    header('location:?page=logout');
-                } else {
-                    die('Pas les bons identifiants');
-                }
-
-
-            }
-        }
-    }
-
-    public function cookielogin()
-    {
-        if (isset ($_POST['login'])) {
-            {
-                $hour = time() + 60 * 60 * 24;
+            if (isset ($_POST['login']) && isset($_POST['password'])) {
+                $hour = time() + (60 * 60 * 24);
                 setcookie('login', $_POST['login'], $hour);
-
-            }
-        }
-
-    }
-
-    public function cookiepass()
-    {
-        if (isset ($_POST['password'])) {
-            {
-                $hour = time() + 60 * 60 * 24;
-
                 setcookie('password', $_POST['password'], $hour);
             }
+            $this->rememberCookie();
+        }
 
+        if (isset($_COOKIE['connected']) && $_COOKIE['connected'] === "1") {
+
+            $this->rememberCookie();
 
         }
     }
+
 
     public function rememberCookie()
     {
-        if (isset ($_POST['remember']) && $_POST['remember']==="on") {
-            {
-                $hour = time() + 60 * 60 * 24;
-                setcookie('password', $_POST['password'], $hour);
-                setcookie('login', $_POST['login'], $hour);
+        $_SESSION['login'] = 'cess';
+        $_SESSION['password'] = "c";
+        $_SESSION['connect'] = true;
+
+
+        setcookie('connected', true, time() + (60 * 60 * 24));
+        header('location:?page=logout');
+
+
     }
-}}}
+
+
+    /*  public function cookieglobal()
+    {
+      if (isset ($_POST['login']) && isset($_POST['password'])) {
+          {
+              $hour = time() + (60 * 60 * 24);
+              setcookie('login', $_POST['login'], $hour);
+              setcookie('password', $_POST['password'], $hour);
+
+          }
+      }
+
+    }*/
+
+}

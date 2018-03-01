@@ -8,7 +8,7 @@
     <body>
 
         <h1 style="text-align: center">Login</h1>
-        <form method="post" action="?page=login&action=connect">
+        <form method="post" action="?page=login">
             <div class="form-group offset-4 col-4">
                 <label for="login">Login</label>
                 <input type="text" value="<?php
