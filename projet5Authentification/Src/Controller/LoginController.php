@@ -43,7 +43,7 @@ class LoginController extends Controller
     {
         if (isset ($_POST['login'])) {
             {
-                $hour = time() + 3600 * 24 * 30;
+                $hour = time() + 60 * 60 * 24;
                 setcookie('login', $_POST['login'], $hour);
 
             }
@@ -55,7 +55,7 @@ class LoginController extends Controller
     {
         if (isset ($_POST['password'])) {
             {
-                $hour = time() + 3600 * 24 * 30;
+                $hour = time() + 60 * 60 * 24;
 
                 setcookie('password', $_POST['password'], $hour);
             }
@@ -63,4 +63,13 @@ class LoginController extends Controller
 
         }
     }
-}
+
+    public function rememberCookie()
+    {
+        if (isset ($_POST['remember']) && $_POST['remember']==="on") {
+            {
+                $hour = time() + 60 * 60 * 24;
+                setcookie('password', $_POST['password'], $hour);
+                setcookie('login', $_POST['login'], $hour);
+    }
+}}}

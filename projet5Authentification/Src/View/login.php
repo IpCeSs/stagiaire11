@@ -20,7 +20,7 @@
                 echo (isset($_COOKIE['password'])) ? $_COOKIE['password'] : null ?>" class="form-control" name="password" id="exampleInputPassword1" >
             </div>
             <div class="form-check"' style="text-align: center">
-                <input type="checkbox" value="1" class="form-check-input" id="remember" checked >
+                <input type="checkbox"  class="form-check-input" id="remember"  >
                 <label class="form-check-label" for="remember">Se souvenir de moi</label>
             </div>
             <div class="form-controll " style="text-align: center">

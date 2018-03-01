@@ -10,7 +10,7 @@ namespace Src\Controller;
  */
 class LogoutController extends Controller
 {
-    /*  public $logout;
+      public $logout;
 
       public function __construct()
       {
@@ -30,12 +30,13 @@ class LogoutController extends Controller
 
                       session_destroy();
 
-                  setcookie("login", $_POST['login'], time() - 3600 * 24 * 60);
-                  setcookie("password", $_POST['password'], time() - 3600 * 24 * 60);
-                  header('/');
+                  setcookie("login", $_POST['login'], time() - 60 *60 * 24);
+                  setcookie("password", $_POST['password'], time() - 60 * 60 * 24);
+          setcookie("remember", $_POST['remember'], time() - 60 * 60 * 24);
+                  header('location:?page=login');
 
 
               }
-          }
-  */
+
+
 }
