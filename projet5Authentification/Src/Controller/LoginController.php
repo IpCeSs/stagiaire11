@@ -40,11 +40,12 @@ class LoginController extends Controller
 
     public function rememberCookie()
     {
+        // va servir à donner des données our la session
         $_SESSION['login'] = 'cess';
         $_SESSION['password'] = "c";
         $_SESSION['connect'] = true;
 
-
+// ce cookie permet de se souvenir de la personne en session
         setcookie('connected', true, time() + (60 * 60 * 24));
         header('location:?page=logout');
 

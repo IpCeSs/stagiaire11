@@ -15,10 +15,12 @@ class LogoutController extends Controller
     public function __construct()
     {
         parent::__construct();
+        //chemin
         if (isset($_GET['action']) && $_GET['action'] === 'disconnect')
         {
             $this->destroy();
         }
+        //vérifie si la connexion est en cours
         if (!isset($_SESSION['connect']) || $_SESSION['connect'] !== true )
         {
             die('Go to Hell');
@@ -31,7 +33,7 @@ class LogoutController extends Controller
 
     public function destroy()
     {
-
+//on crée une methode quie va détruire session et cookies une fois log out pressé
      $_SESSION['login'] = 'cess';
         $_SESSION['password'] = "c";
 
