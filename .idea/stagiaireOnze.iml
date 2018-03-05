@@ -1,7 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/app" isTestSource="false" packagePrefix="App\" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/barryvdh/laravel-debugbar" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/barryvdh/laravel-ide-helper" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/barryvdh/reflection-docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/dnoegel/php-xdg-base-dir" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/doctrine/instantiator" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/erusev/parsedown" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/fideloper/proxy" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/filp/whoops" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/fzaninotto/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/jakub-onderka/php-console-color" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/jakub-onderka/php-console-highlighter" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/laravel/framework" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/laravel/tinker" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/league/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/maximebf/debugbar" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/mockery/mockery" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/mtdowling/cron-expression" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/nesbot/carbon" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/nikic/php-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/paragonie/random_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/phar-io/manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/phar-io/version" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/phpdocumentor/reflection-common" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/phpdocumentor/reflection-docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/phpdocumentor/type-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/phpspec/prophecy" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/phpunit/php-file-iterator" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/phpunit/php-text-template" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/phpunit/php-timer" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/phpunit/php-token-stream" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/phpunit/phpunit-mock-objects" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/psy/psysh" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/ramsey/uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/sebastian/code-unit-reverse-lookup" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/sebastian/comparator" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/sebastian/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/sebastian/environment" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/sebastian/exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/sebastian/global-state" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/sebastian/object-enumerator" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/sebastian/object-reflector" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/sebastian/recursion-context" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/sebastian/resource-operations" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/swiftmailer/swiftmailer" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/symfony/class-loader" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/symfony/css-selector" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/symfony/debug" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/symfony/http-foundation" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/symfony/http-kernel" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/symfony/polyfill-php70" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/symfony/routing" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/symfony/thanks" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/symfony/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/theseer/tokenizer" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/tijsverkoyen/css-to-inline-styles" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/vlucas/phpdotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/PHP_Formulaire-master/vendor/webmozart/assert" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

@@ -1,0 +1,92 @@
+[33mcommit 309b5c353828c50344d669c6590c47945f677e9b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: a8c8270 f5395b8
+Author: IpCeSs <34744351+IpCeSs@users.noreply.github.com>
+Date:   Wed Feb 21 09:40:45 2018 +0100
+
+    Merge pull request #4 from iamarnaud/eric
+    
+    ajout dossier document projet
+
+[33mcommit f5395b83e6ad1b2fbd8f6f96bf31a1d24ebfa386[m
+Author: Eric LE DEVEDEC <ledevedec.eric@gmail.com>
+Date:   Wed Feb 21 09:23:33 2018 +0100
+
+    ajout dossier document projet
+
+[33mcommit a8c8270ff21dc246689c8cfb42400b26dc1be8ca[m
+Merge: 283488b 1613a39
+Author: iamarnaud <34537277+iamarnaud@users.noreply.github.com>
+Date:   Wed Feb 21 09:23:25 2018 +0100
+
+    Merge pull request #3 from iamarnaud/cess
+    
+    c'est tout' bon ma chum
+
+[33mcommit 1613a39a3bdc2b8ea30d802a6f31a54edc6efdd2[m
+Author: Cecilia <ceciliapigeolet@gmail.com>
+Date:   Tue Feb 20 16:54:53 2018 +0100
+
+    corrections minimes
+
+[33mcommit 7fad2df5d114a25dcaf40f9557beca50cd944862[m
+Author: Cecilia <ceciliapigeolet@gmail.com>
+Date:   Tue Feb 20 16:49:52 2018 +0100
+
+    correction erreur manquait un guillmet
+
+[33mcommit 72e89b048681617813022d984f0ee874b8f6dddc[m
+Author: Cecilia <ceciliapigeolet@gmail.com>
+Date:   Tue Feb 20 16:39:20 2018 +0100
+
+    ajout de extends layout
+
+[33mcommit 1dec7443cd71db38b2572c9588bb5cc1d5758009[m
+Author: Cecilia <ceciliapigeolet@gmail.com>
+Date:   Tue Feb 20 16:24:25 2018 +0100
+
+    creation views
+
+[33mcommit 283488baeed4e2f279031bc5b9d49a5b1b052d99[m
+Merge: 73d396d 3c36805
+Author: iamarnaud <34537277+iamarnaud@users.noreply.github.com>
+Date:   Tue Feb 20 13:25:27 2018 +0100
+
+    Merge pull request #1 from iamarnaud/Arnaud
+    
+    ajout caouecs langue fr
+
+[33mcommit 3c368054cbcf2f9beee05ba5c17b30e5d119cb9f[m[33m ([m[1;31morigin/Arnaud[m[33m, [m[1;32mArnaud[m[33m)[m
+Author: Arnaud <arnaud.voiron@gmail.com>
+Date:   Tue Feb 20 13:16:54 2018 +0100
+
+    ajout caouecs langue fr
+
+[33mcommit 73d396dbcb8a98f20a83ee8a3e5e43c31149f0cb[m
+Author: Arnaud <arnaud.voiron@gmail.com>
+Date:   Tue Feb 20 11:33:53 2018 +0100
+
+    first commit
+
+[33mcommit 342e5afd49c62f7e2381dafef5aa2cd256d2c6b3[m
+Author: Arnaud <arnaud.voiron@gmail.com>
+Date:   Tue Feb 20 11:29:53 2018 +0100
+
+    suppression fichiers
+
+[33mcommit e7fceef1de09276af9f1294e67c210549dc8664a[m
+Author: Arnaud <arnaud.voiron@gmail.com>
+Date:   Tue Feb 20 11:23:51 2018 +0100
+
+    ajout de fichiers oubliés
+
+[33mcommit c5b716f4280dc7a08721659d18db6e1069ad4b7c[m
+Author: Arnaud <arnaud.voiron@gmail.com>
+Date:   Tue Feb 20 11:21:42 2018 +0100
+
+    initialisation du projet Pause Café
+
+[33mcommit a6cd634bdd54ca47a309fe30ecc3f1dccc0bf974[m
+Author: iamarnaud <34537277+iamarnaud@users.noreply.github.com>
+Date:   Tue Feb 20 11:01:41 2018 +0100
+
+    Initial commit
